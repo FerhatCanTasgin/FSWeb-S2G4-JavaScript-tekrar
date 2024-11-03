@@ -98,7 +98,7 @@ let enbuyuk = sayilar[0];
 let ucebolunenlerintoplami;
 let besyuzdenkucuksayilar = [];
 let siralisayilar;
-let tekraredensayilar;
+let tekraredensayilar = [];
 
 // 3a çözümü
 
@@ -144,8 +144,22 @@ siralisayilar = besyuzdenkucuksayilar.sort(function (a, b) {
 console.log(siralisayilar);
 
 // 3f çözümü
-
-/* kodlar buraya */
+const tekrarSayisi = {};
+for (let j = 0; j < sayilar.length; j++) {
+  const sayi = sayilar[j];
+  if (!tekrarSayisi[sayi]) {
+    tekrarSayisi[sayi] = 1;
+  } else {
+    tekrarSayisi[sayi]++;
+  }
+}
+for (const sayi in tekrarSayisi) {
+  if (tekrarSayisi[sayi] > 1) {
+    const element = `${sayi} sayısı ${tekrarSayisi[sayi]} kere tekrar edilmiştir`;
+    tekraredensayilar.push(element);
+  }
+}
+console.log(tekraredensayilar);
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
