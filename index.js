@@ -128,7 +128,6 @@ ucebolunenlerintoplami = ucetambolunenler.reduce(
   0
 );
 console.log(ucebolunenlerintoplami);
-/* kodlar buraya */
 
 // 3d çözümü
 for (let l = 0; l < sayilar.length; l++) {
@@ -137,11 +136,12 @@ for (let l = 0; l < sayilar.length; l++) {
   }
 }
 console.log(besyuzdenkucuksayilar);
-/* kodlar buraya */
 
 // 3e çözümü
-
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort(function (a, b) {
+  return a - b;
+});
+console.log(siralisayilar);
 
 // 3f çözümü
 
