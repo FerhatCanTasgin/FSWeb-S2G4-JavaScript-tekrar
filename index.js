@@ -116,7 +116,12 @@ for (let k = 0; k < sayilar.length; k++) {
 console.log(enbuyuk);
 
 // 3b çözümü:
-
+sayilar.forEach(function (sayi) {
+  if (sayi % 3 == 0) {
+    ucetambolunenler.push(sayi);
+  }
+});
+console.log(ucetambolunenler);
 // 3c çözümü:
 
 /* kodlar buraya */
