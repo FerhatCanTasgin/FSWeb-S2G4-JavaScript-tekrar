@@ -96,7 +96,7 @@ let ucetambolunenler = [];
 let enkucuk = sayilar[0];
 let enbuyuk = sayilar[0];
 let ucebolunenlerintoplami;
-let besyuzdenkucuksayilar;
+let besyuzdenkucuksayilar = [];
 let siralisayilar;
 let tekraredensayilar;
 
@@ -131,7 +131,12 @@ console.log(ucebolunenlerintoplami);
 /* kodlar buraya */
 
 // 3d çözümü
-
+for (let l = 0; l < sayilar.length; l++) {
+  if (sayilar[l] < 500) {
+    besyuzdenkucuksayilar.push(sayilar[l]);
+  }
+}
+console.log(besyuzdenkucuksayilar);
 /* kodlar buraya */
 
 // 3e çözümü
