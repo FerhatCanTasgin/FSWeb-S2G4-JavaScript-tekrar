@@ -123,7 +123,11 @@ sayilar.forEach(function (sayi) {
 });
 console.log(ucetambolunenler);
 // 3c çözümü:
-
+ucebolunenlerintoplami = ucetambolunenler.reduce(
+  (toplam, sayilar) => toplam + sayilar,
+  0
+);
+console.log(ucebolunenlerintoplami);
 /* kodlar buraya */
 
 // 3d çözümü
