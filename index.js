@@ -108,15 +108,14 @@ for (let i = 0; i < sayilar.length; i++) {
   }
 }
 console.log(enkucuk);
-
-// 3b çözümü:
-
 for (let k = 0; k < sayilar.length; k++) {
   if (sayilar[k] > enbuyuk) {
     enbuyuk = sayilar[k];
   }
 }
 console.log(enbuyuk);
+
+// 3b çözümü:
 
 // 3c çözümü:
 
